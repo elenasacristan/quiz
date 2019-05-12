@@ -23,7 +23,7 @@ def ask_question():
     answers = []
     
     # when we use the 'with block' we don't need to close the file because it will be closed when the block ends
-    with open('questions.txt', 'r+') as file:
+    with open('questions.txt', 'r') as file:
         lines = file.read().splitlines()
         
     # this for loop will create tuples of number of line + text
